@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "composite": "node composite/composite.js",
+    "dependency": "node dependency-injection/main.js",
+    "factory": "node factory/main.js",
+    "observer": "node observer/main.js",
+    "state": "node state/state.js",
+    "strategy": "node strategy/strategy.js"
   },
   "author": "",
   "license": "ISC"

@@ -1,8 +1,7 @@
-# Dependency Injection
+# Dependency Injection Design Pattern
 
-A strategy where an object has it's dependencies injected into it. It has an schema of client-service.
-
-In simpler terms, dependency injection is passing something that the client needs in order to work, instead of building it itself, or getting is from global scope.
+  * A strategy where an object has it's dependencies injected into it. It has an schema of client-service.
+  * In simpler terms, dependency injection is passing something that the client needs in order to work, instead of building it itself, or getting is from global scope.
 
 
 
@@ -18,3 +17,6 @@ In simpler terms, dependency injection is passing something that the client need
 
 ## Examples:
   * Dependency Injection in NestJS
+
+## UML Diagram
+![diagram](strategy/strategy-uml.jpg?raw=true)

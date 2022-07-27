@@ -1,4 +1,4 @@
-# Factory
+# Factory Design Pattern
 
 * It is a function that creates and returns a new object
 * A signle factory can create different objects that share properties and methods

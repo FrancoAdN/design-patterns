@@ -74,26 +74,28 @@ class Shipping {
 }
 
 // Factory design pattern
-function companyFactory(company) {
-  switch (company) {
-    case "Amazon":
-      return new Amazon();
-    case "DHL":
-      return new DHL();
-    case "Fedex":
-      return new Fedex();
-    default:
-      return new MercadoLibre();
+class CompanyFactory {
+  static getCompany(name) {
+    switch (name) {
+      case "Amazon":
+        return new Amazon();
+      case "DHL":
+        return new DHL();
+      case "Fedex":
+        return new Fedex();
+      default:
+        return new MercadoLibre();
+    }
   }
 }
 
 // facade design pattern
 const calculateAllCompanies = (packageInfo) => {
-  const companies = ["Amazon", "DHL", "MeLi", "Fedex"];
+  const companies = ["Amazon", "DHL", "MercadoLibre", "Fedex"];
 
   return companies.reduce((acc, company) => {
     const ship = new Shipping();
-    ship.setStrategy(companyFactory(company));
+    ship.setStrategy(CompanyFactory.getCompany(company));
     acc = {
       ...acc,
       [company]: ship.calculate(packageInfo),
