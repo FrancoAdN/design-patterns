@@ -19,4 +19,4 @@
   * Dependency Injection in NestJS
 
 ## UML Diagram
-![diagram](strategy/strategy-uml.jpg?raw=true)
+![diagram](https://github.com/FrancoAdN/design-patterns/blob/main/dependency-injection/dep-inj-uml.jpeg?raw=true)
