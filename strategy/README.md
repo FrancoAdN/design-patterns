@@ -4,4 +4,4 @@
   * It allows you to swaps stratergies in and out easily.
 
 ## UML Diagram
-![diagram](strategy/strategy-uml.jpg?raw=true)
+![diagram](https://github.com/FrancoAdN/design-patterns/blob/main/strategy/strategy-uml.jpg?raw=true)
